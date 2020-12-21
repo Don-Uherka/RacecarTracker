@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Racecar_Tracker_By_UherkaMotorsports.Models;
 
 namespace Racecar_Tracker_By_UherkaMotorsports.Data
 {
@@ -12,5 +13,6 @@ namespace Racecar_Tracker_By_UherkaMotorsports.Data
             : base(options)
         {
         }
+        public DbSet<Racecar_Tracker_By_UherkaMotorsports.Models.Track> Track { get; set; }
     }
 }
