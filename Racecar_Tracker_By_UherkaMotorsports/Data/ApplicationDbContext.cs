@@ -14,5 +14,6 @@ namespace Racecar_Tracker_By_UherkaMotorsports.Data
         {
         }
         public DbSet<Racecar_Tracker_By_UherkaMotorsports.Models.Track> Track { get; set; }
+        public DbSet<Racecar_Tracker_By_UherkaMotorsports.Models.Crew> Crew { get; set; }
     }
 }
