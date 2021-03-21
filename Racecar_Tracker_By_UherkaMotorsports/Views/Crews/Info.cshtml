@@ -1,0 +1,49 @@
+﻿@model Racecar_Tracker_By_UherkaMotorsports.Models.Crew
+
+@{
+    ViewData["Title"] = "Info";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Info</h1>
+
+<div>
+    <h4>Crew</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nights)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nights)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tires)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tires)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Springs)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Springs)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Fuel)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Fuel)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gears)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gears)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
